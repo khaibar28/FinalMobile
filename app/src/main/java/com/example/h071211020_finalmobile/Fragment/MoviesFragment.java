@@ -49,11 +49,7 @@ public class MoviesFragment extends Fragment {
                 if(response.isSuccessful()){
                     if(response.body() != null){
                         List<MovieModel> movieModel = response.body().getMovieModels();
-                        for (int i = 0; i < movieModel.size(); i++) {
-                            Log.d("apakah", movieModel.get(i).getOriginal_title());
-                        }
                         movieAdapter = new MovieAdapter(movieModel);
-
                         binding.rvMovie.setAdapter(movieAdapter);
 
                     }

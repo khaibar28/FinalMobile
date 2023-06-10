@@ -29,6 +29,8 @@ public class TvModel implements Parcelable {
     @SerializedName("vote_average")
     private String vote_average;
 
+    public TvModel (){}
+
     protected TvModel(Parcel in) {
         id = in.readInt();
         backdrop_path = in.readString();
@@ -93,5 +95,33 @@ public class TvModel implements Parcelable {
 
     public String getVote_average() {
         return vote_average;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setBackdrop_path(String backdrop_path) {
+        this.backdrop_path = backdrop_path;
+    }
+
+    public void setOriginal_name(String original_name) {
+        this.original_name = original_name;
+    }
+
+    public void setFirst_air_date(String first_air_date) {
+        this.first_air_date = first_air_date;
+    }
+
+    public void setOverview(String overview) {
+        this.overview = overview;
+    }
+
+    public void setPoster_path(String poster_path) {
+        this.poster_path = poster_path;
+    }
+
+    public void setVote_average(String vote_average) {
+        this.vote_average = vote_average;
     }
 }

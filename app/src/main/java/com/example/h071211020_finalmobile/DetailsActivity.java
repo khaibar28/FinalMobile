@@ -45,10 +45,6 @@ public class DetailsActivity extends AppCompatActivity {
             Glide.with(this).load("https://image.tmdb.org/t/p/w500" + movieModel.getBackdrop_path()).into(binding.ivBackdropPath);
         }
 
-        binding.cvBack.setOnClickListener(view -> {
-            Intent intent = new Intent();
-            startActivity(intent);
-            finish();
-        });
+        binding.cvBack.setOnClickListener(view -> {onBackPressed();});
     }
 }

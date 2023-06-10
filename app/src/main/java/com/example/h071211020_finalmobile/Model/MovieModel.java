@@ -30,6 +30,8 @@ public class MovieModel implements Parcelable {
     @SerializedName("vote_average")
     private String vote_average;
 
+    public MovieModel(){}
+
     protected MovieModel(Parcel in) {
         id = in.readInt();
         backdrop_path = in.readString();
