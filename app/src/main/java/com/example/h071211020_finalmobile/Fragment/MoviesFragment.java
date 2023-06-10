@@ -11,13 +11,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.example.h071211020_finalmobile.Model.MovieModel;
 import com.example.h071211020_finalmobile.Model.MovieResponse;
-import com.example.h071211020_finalmobile.MovieAdapter;
+import com.example.h071211020_finalmobile.Adapter.MovieAdapter;
 import com.example.h071211020_finalmobile.Networking.ApiConfig;
-import com.example.h071211020_finalmobile.R;
 import com.example.h071211020_finalmobile.databinding.FragmentMoviesBinding;
 
 import java.util.List;
@@ -55,6 +53,7 @@ public class MoviesFragment extends Fragment {
                             Log.d("apakah", movieModel.get(i).getOriginal_title());
                         }
                         movieAdapter = new MovieAdapter(movieModel);
+
                         binding.rvMovie.setAdapter(movieAdapter);
 
                     }

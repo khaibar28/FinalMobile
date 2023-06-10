@@ -1,4 +1,4 @@
-package com.example.h071211020_finalmobile;
+package com.example.h071211020_finalmobile.Adapter;
 
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.h071211020_finalmobile.DetailsActivity;
 import com.example.h071211020_finalmobile.Model.MovieModel;
 import com.example.h071211020_finalmobile.databinding.ItemCardBinding;
 
@@ -34,7 +35,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         holder.binding.tvNamaFilm.setText(movieModel.getOriginal_title());
         holder.binding.tvTahun.setText(movieModel.getRelease_date());
         holder.itemView.setOnClickListener(v ->{
-            Intent intent = new Intent(v.getContext(),DetailsActivity.class);
+            Intent intent = new Intent(v.getContext(), DetailsActivity.class);
             intent.putExtra(DetailsActivity.EXTRA_MOVIE, movieModel);
             v.getContext().startActivity(intent);
         });

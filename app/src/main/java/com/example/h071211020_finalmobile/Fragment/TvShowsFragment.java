@@ -14,9 +14,7 @@ import android.view.ViewGroup;
 import com.example.h071211020_finalmobile.Model.TvModel;
 import com.example.h071211020_finalmobile.Model.TvResponse;
 import com.example.h071211020_finalmobile.Networking.ApiConfig;
-import com.example.h071211020_finalmobile.R;
-import com.example.h071211020_finalmobile.TvAdapter;
-import com.example.h071211020_finalmobile.databinding.FragmentMoviesBinding;
+import com.example.h071211020_finalmobile.Adapter.TvAdapter;
 import com.example.h071211020_finalmobile.databinding.FragmentTvShowsBinding;
 
 import java.util.List;

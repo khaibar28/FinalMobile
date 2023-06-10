@@ -1,4 +1,4 @@
-package com.example.h071211020_finalmobile;
+package com.example.h071211020_finalmobile.Adapter;
 
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.h071211020_finalmobile.DetailsActivity;
 import com.example.h071211020_finalmobile.Model.TvModel;
 import com.example.h071211020_finalmobile.databinding.ItemCardBinding;
 
@@ -34,10 +35,11 @@ public class TvAdapter extends RecyclerView.Adapter<TvAdapter.ViewHolder> {
         holder.bind.tvNamaFilm.setText(tvModel.getOriginal_name());
         holder.bind.tvTahun.setText(tvModel.getFirst_air_date());
         holder.itemView.setOnClickListener(v -> {
-            Intent intent = new Intent(v.getContext(),DetailsActivity.class);
-            intent.putExtra(DetailsActivity.EXTRA_MOVIE, tvModel);
+            Intent intent = new Intent(v.getContext(), DetailsActivity.class);
+            intent.putExtra(DetailsActivity.EXTRA_TV, tvModel);
             v.getContext().startActivity(intent);
         });
+
     }
 
     @Override
