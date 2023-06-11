@@ -124,4 +124,14 @@ public class TvModel implements Parcelable {
     public void setVote_average(String vote_average) {
         this.vote_average = vote_average;
     }
+
+    public TvModel(int id, String backdrop_path, String original_name, String first_air_date, String overview, String poster_path, String vote_average) {
+        this.id = id;
+        this.backdrop_path = backdrop_path;
+        this.original_name = original_name;
+        this.first_air_date = first_air_date;
+        this.overview = overview;
+        this.poster_path = poster_path;
+        this.vote_average = vote_average;
+    }
 }

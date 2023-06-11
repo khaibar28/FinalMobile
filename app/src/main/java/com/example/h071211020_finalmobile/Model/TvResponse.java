@@ -10,6 +10,4 @@ public class TvResponse {
     public List<TvModel> tvModels;
 
     public List<TvModel> getTvModels() {return tvModels;}
-
-    public void setTvModels(List<TvModel> tvModels) {this.tvModels = tvModels;}
 }

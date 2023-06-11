@@ -10,6 +10,4 @@ public class MovieResponse {
     public List<MovieModel> movieModels;
 
     public List<MovieModel> getMovieModels() {return movieModels;}
-
-    public void setMovieModels(List<MovieModel> movieModels) {this.movieModels = movieModels;}
 }

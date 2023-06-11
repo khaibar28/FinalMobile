@@ -1,4 +1,4 @@
-package com.example.h071211020_finalmobile;
+package com.example.h071211020_finalmobile.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -11,6 +11,7 @@ import android.view.View;
 import com.example.h071211020_finalmobile.Fragment.FavoritesFragment;
 import com.example.h071211020_finalmobile.Fragment.MoviesFragment;
 import com.example.h071211020_finalmobile.Fragment.TvShowsFragment;
+import com.example.h071211020_finalmobile.R;
 import com.example.h071211020_finalmobile.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {

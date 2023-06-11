@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.h071211020_finalmobile.DetailsActivity;
+import com.example.h071211020_finalmobile.Activity.DetailsActivity;
 import com.example.h071211020_finalmobile.Model.TvModel;
 import com.example.h071211020_finalmobile.databinding.ItemCardBinding;
 
