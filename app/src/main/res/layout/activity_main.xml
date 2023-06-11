@@ -30,6 +30,32 @@
 
     </Toolbar>
 
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:indeterminateTint="#BF00FF"
+        android:layout_centerInParent="true"/>
+    
+    <TextView
+        android:id="@+id/tvNoInternet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please check your internet connection"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/ivNoInternet"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvNoInternet"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/baseline_refresh_24"/>
 
     <RelativeLayout
         android:id="@+id/btn"
